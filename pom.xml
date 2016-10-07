@@ -1,141 +1,137 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.googlecode</groupId>
-	<artifactId>objectify-persister</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+    <modelVersion>4.0.0</modelVersion>
 
-	<properties>
+    <groupId>andreluiznsilva.objectify-persister</groupId>
+    <artifactId>objectify-persister</artifactId>
+    <version>0.0.2-SNAPSHOT</version>
 
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<downloadSources>true</downloadSources>
-		<java.version>1.6</java.version>
+    <properties>
 
-		<gae.version>1.6.0</gae.version>
-		<objectify.version>3.0</objectify.version>
-		<jpa.version>1.0</jpa.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <downloadSources>true</downloadSources>
+        <java.version>1.6</java.version>
 
-		<junit.version>4.10</junit.version>
-		<easymock.version>3.0</easymock.version>
-		<hamcrest.version>1.1</hamcrest.version>
+        <gae.version>1.6.0</gae.version>
+        <objectify.version>3.0</objectify.version>
+        <jpa.version>1.0</jpa.version>
 
-	</properties>
+        <junit.version>4.10</junit.version>
+        <easymock.version>3.0</easymock.version>
+        <hamcrest.version>1.1</hamcrest.version>
 
-	<repositories>
-		<repository>
-			<id>objectify-appengine</id>
-			<url>http://objectify-appengine.googlecode.com/svn/maven</url>
-		</repository>
-	</repositories>
+    </properties>
 
-	<dependencies>
+    <dependencies>
 
-		<!-- Dependencias da API da App Engine -->
-		<dependency>
-			<groupId>com.google.appengine</groupId>
-			<artifactId>appengine-api-1.0-sdk</artifactId>
-			<version>${gae.version}</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.google.appengine</groupId>
-			<artifactId>appengine-tools-sdk</artifactId>
-			<version>${gae.version}</version>
-			<scope>compile</scope>
-		</dependency>
+        <!-- Dependencias da API da App Engine -->
+        <dependency>
+            <groupId>com.google.appengine</groupId>
+            <artifactId>appengine-api-1.0-sdk</artifactId>
+            <version>${gae.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.appengine</groupId>
+            <artifactId>appengine-tools-sdk</artifactId>
+            <version>${gae.version}</version>
+            <scope>compile</scope>
+        </dependency>
 
-		<!-- Dependências Objectify -->
-		<dependency>
-			<groupId>com.googlecode.objectify</groupId>
-			<artifactId>objectify</artifactId>
-			<version>${objectify.version}</version>
-		</dependency>
+        <!-- Dependências Objectify -->
+        <dependency>
+            <groupId>com.googlecode.objectify</groupId>
+            <artifactId>objectify</artifactId>
+            <version>3.1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/objectify-3.1.jar</systemPath>
+        </dependency>
 
-		<dependency>
-			<groupId>javax.persistence</groupId>
-			<artifactId>persistence-api</artifactId>
-			<version>${jpa.version}</version>
-		</dependency>
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>persistence-api</artifactId>
+            <version>${jpa.version}</version>
+        </dependency>
 
-		<!-- Dependencias de Testes a App Engine -->
-		<dependency>
-			<groupId>com.google.appengine</groupId>
-			<artifactId>appengine-api-labs</artifactId>
-			<version>${gae.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.google.appengine</groupId>
-			<artifactId>appengine-api-stubs</artifactId>
-			<version>${gae.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.google.appengine</groupId>
-			<artifactId>appengine-testing</artifactId>
-			<version>${gae.version}</version>
-			<scope>test</scope>
-		</dependency>
+        <!-- Dependencias de Testes a App Engine -->
+        <dependency>
+            <groupId>com.google.appengine</groupId>
+            <artifactId>appengine-api-labs</artifactId>
+            <version>${gae.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.appengine</groupId>
+            <artifactId>appengine-api-stubs</artifactId>
+            <version>${gae.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.appengine</groupId>
+            <artifactId>appengine-testing</artifactId>
+            <version>${gae.version}</version>
+            <scope>test</scope>
+        </dependency>
 
-		<!-- Dependencias de Frameworks de Teste -->
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>${junit.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.easymock</groupId>
-			<artifactId>easymock</artifactId>
-			<version>${easymock.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.hamcrest</groupId>
-			<artifactId>hamcrest-all</artifactId>
-			<version>${hamcrest.version}</version>
-			<scope>test</scope>
-		</dependency>
+        <!-- Dependencias de Frameworks de Teste -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.easymock</groupId>
+            <artifactId>easymock</artifactId>
+            <version>${easymock.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-all</artifactId>
+            <version>${hamcrest.version}</version>
+            <scope>test</scope>
+        </dependency>
 
-	</dependencies>
+    </dependencies>
 
-	<build>
+    <build>
 
-		<plugins>
+        <plugins>
 
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>2.8</version>
-				<executions>
-					<execution>
-						<id>attach-sources</id>
-						<phase>verify</phase>
-						<goals>
-							<goal>jar</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.8</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
 
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-source-plugin</artifactId>
-				<version>2.1.2</version>
-				<executions>
-					<execution>
-						<id>attach-sources</id>
-						<phase>verify</phase>
-						<goals>
-							<goal>jar-no-fork</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.1.2</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
 
-		</plugins>
+        </plugins>
 
-	</build>
+    </build>
 
 </project>

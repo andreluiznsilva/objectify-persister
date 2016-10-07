@@ -164,6 +164,10 @@ public class AsyncObjectifyPersisterImpl implements AsyncObjectifyPersister {
 
 	}
 
+	public <T> Result<Map<Key<T>, T>> get(Key<? extends T>... keys) {
+		return null;
+	}
+
 	public <T> Result<T> get(final Key<? extends T> key) {
 
 		Result<T> found = base.get(key);

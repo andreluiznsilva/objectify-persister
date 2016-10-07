@@ -141,6 +141,10 @@ public class ObjectifyPersisterImpl implements ObjectifyPersister {
 
 	}
 
+	public <T> Map<Key<T>, T> get(Key<? extends T>... keys) {
+		return null;
+	}
+
 	public <T> T get(Key<? extends T> key) throws NotFoundException {
 
 		T result = base.get(key);

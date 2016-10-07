@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/45/trunk/main/src/test/java/com/googlecode/objectify/persister
+END
+TestForUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/38/trunk/main/src/test/java/com/googlecode/objectify/persister/TestForUser.java
+END
+TestForCollections.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/38/trunk/main/src/test/java/com/googlecode/objectify/persister/TestForCollections.java
+END
+TestForProduct.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/38/trunk/main/src/test/java/com/googlecode/objectify/persister/TestForProduct.java
+END
+BasePersisterTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/38/trunk/main/src/test/java/com/googlecode/objectify/persister/BasePersisterTest.java
+END
+TestForOrder.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/38/trunk/main/src/test/java/com/googlecode/objectify/persister/TestForOrder.java
+END

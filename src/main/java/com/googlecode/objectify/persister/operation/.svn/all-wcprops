@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/42/trunk/main/src/main/java/com/googlecode/objectify/persister/operation
+END
+Loader.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/40/trunk/main/src/main/java/com/googlecode/objectify/persister/operation/Loader.java
+END
+Persister.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/42/trunk/main/src/main/java/com/googlecode/objectify/persister/operation/Persister.java
+END
+AbstractOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/32/trunk/main/src/main/java/com/googlecode/objectify/persister/operation/AbstractOperation.java
+END
+Deleter.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/42/trunk/main/src/main/java/com/googlecode/objectify/persister/operation/Deleter.java
+END

@@ -1,0 +1,20 @@
+# A default java.util.logging configuration.
+
+# SEVERE - O nível mais alto de log. Utilizado para mensagens extremamente importantes.
+# WARNING - Mensagens de aviso.
+# INFO - Para mensagens em tempo de execução.
+# CONFIG - Mensagens de informação a respeito de configurações.
+# FINE - Utilizado para detalhar a informação. Geralmente está presente em sessões de debug.
+# FINER - O mesmo que FINE, porém mais detalhado.
+# FINEST - O mesmo que FINE e FINER, porém com o nível mais alto de detalhamento dentre eles.
+# ALL - habilita todos os níveis de log. Temos também o nível "OFF" que é usado para desativar o logging.
+
+handlers =  java.util.logging.ConsoleHandler
+
+java.util.logging.ConsoleHandler.level=ALL
+java.util.logging.ConsoleHandler.formatter=java.util.logging.SimpleFormatter
+
+.level = INFO
+
+com.googlecode.objectify.persister.level = ALL
+
